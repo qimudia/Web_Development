@@ -4,20 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Georgia Graphix is a Graphics design company with 
+    expertise in logo design, brochure design, package design, web design, 
+    t-shirt design, and apparel design">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Final Project</title>
+    <title>Final Project:: Quote</title>
     <link rel="stylesheet" href="final.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="16x16">
+    <script>
+        function validateForm(){
+            if (document.forms[0].myEmail.value == ""){
+                alert("Please enter an e-mail address.");
+                return false;
+            }//end if
+            return true;
+        }//end function validateForm
+    </script>
 </head>
 
 <body>
 
     <header>
-        <h1>Georgia Graphix and Web Design Company</h1>
+        <h1 id="top">Georgia Graphix and Web Design</h1>
+
     </header>
 
     <div id="wrapper">
-        
 
+        <!--Navigational bar-->
         <nav>
             <a href="index.html">Home</a>
             <a href="portfolio.html">Portfolio</a>
@@ -26,18 +40,21 @@
             <a href="about.html">About</a>
             <a href="contact.html">Contact Us</a>
             <a href="career.html">Career</a>
+            <a href="sitemap.html">Site Map</a>
+
 
         </nav>
         <main>
+            <h3>Quotes: <a href="#subRequest"> Skip to form</a> </h3>
             <h4>How It Works</h4>
             <div>
                 <div>
                     <dl>
                         <dt>1. Submit Your Request</dt>
                         <dd>When we receive your request, we will contact you
-                             within 24 hours to discuss the project</dd><br>
+                            within 24 hours to discuss the project</dd><br>
                         <dt>2. Review Design</dt>
-                        <dd>We will work with you to perfect your design by 
+                        <dd>We will work with you to perfect your design by
                             sharing our progress till you are satisfied with our work</dd><br>
                         <dt>3. Satisfied with Design</dt>
                         <dd>Ones you are satisfied with the design, we will close the project</dd><br>
@@ -45,33 +62,87 @@
                         <dd>You will download your design/files</dd>
                     </dl>
                 </div>
-                <div class="form">
 
-                </div>
             </div>
-            
-            
-            
+            <!--form-->
+
+            <h4 id="subRequest">Submit Your Request</h4>
+            <p>Required information is marked with an asterisk (*).</p>
+            <form method="post" onsubmit="return validateForm();" action="https://webdevbasics.net/scripts/pacific.php">
+                <label for="myFName">First Name:</label>
+                <input type="text" name="myFName" id="myFName" placeholder="Your first name">
+
+                <label for="myLName">Last Name:</label>
+                <input type="text" name="myLName" id="myLName" placeholder="Your last name">
+
+                <label for="myEmail">* E-mail:</label>
+                <input type="email" name="myEmail" id="myEmail" placeholder="you@yourdomain.com">
+
+                <label for="myPhone">Phone:</label>
+                <input type="tel" name="myPhone" id="myPhone" placeholder="555-555-5555">
+
+                <!--Added fieldset to group the checkbox together-->
+                <fieldset>
+
+                    <legend>Please select from the following services:</legend>
+
+                    <label class="container">Logo
+                        <input type="checkbox" name="logo">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Web
+                        <input type="checkbox" name="web">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Brochure
+                        <input type="checkbox" name="brochure">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">T-Shirt
+                        <input type="checkbox" name="t-shirt">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Packaging
+                        <input type="checkbox" name="Packaging">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Other
+                        <input type="checkbox" name="other">
+                        <span class="checkmark"></span>
+                    </label>
+
+                </fieldset>
+
+                <label for="myComments">Comments:</label>
+                <textarea name="myComments" id="myComments" rows="4" cols="40" 
+                    placeholder="Your text here"></textarea>
+
+                <input class="mySubmit" type="submit" value="Submit">
+
+            </form>
+
+
+
         </main>
         <div class="policy">
             <a href="qanda.html">FAQs</a>
             <a href="privacyp.html">Privacy Plolicy</a>
             <a href="contact.html">Contact Us</a>
+            <a href="#top"> Skip to top</a>
 
-         </div>
-       
+        </div>
+
         <footer>
-                  
+
             Copyright &copy; 2020 Georgia Graphics Design
             <br>
-            <a href="customerservice@georgiagrapix.com">customerservice@georgiagrapix.com</a>
-       
-                          
+            <a href="mailto:customerservice@georgiagrapix.com">customerservice@georgiagrapix.com</a>
+
         </footer>
 
 
     </div>
-    
+
 
 </body>
 

@@ -22,6 +22,7 @@ h1 {
   margin: 0;
   width: 100%;
   padding-top: 1.5em;
+  
 }
 dl {
   padding-left: 0;
@@ -39,8 +40,6 @@ dt {
   margin-left: auto;
   /*background-color: #000033;*/
   background-color: #3399cc;
-  /* box-shadow: 3px 3px 3px #3399cc;
- box-shadow: 3px 3px 3px rgb(37, 37, 37);*/
   border: 1em;
 }
 
@@ -106,6 +105,7 @@ h3 {
   font-family: Georgia, "Times New Roman", Times, serif;
   background-color: #3399cc;
   height: 40px;
+  text-align: center;
 }
 main {
   padding-left: 2em;
@@ -119,8 +119,10 @@ main {
   height: auto;
 }
 .streamPhotos {
-  height: 500px;
-  background-image: url(images/index.jpg);
+  height: auto;
+  /*height: 500px;
+  background-image: url(images/headerqq2.jpg);
+  /*background-image: url(images/index.jpg);*/
   background-repeat: no-repeat;
   background-size: 100% 100%;
 
@@ -128,10 +130,11 @@ main {
   /*margin-left: 170px;*/
 }
 #streamPhotos1 {
-  height: 650px;
-  background-image: url(images/index.jpg);
+  height: auto;
+  /*height: 717px;
+  background-image: url(images/customer1.jpg);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 100% 100%;*/
 
   color: #ffffff;
   /*margin-left: 170px;*/
@@ -148,7 +151,7 @@ main {
 }
 
 .streamPhotos4 {
-  height: 795px;
+  height: 830px;
   background-image: url(images/brochure4.jpeg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -172,9 +175,6 @@ main {
   color: #e7e3e3;
   float: left;
   width: 25%;
-  /* border-top-left-radius: 5px;
-  border-color:  #3399cc;
-  border-style: groove;*/
   height: 250px;
   padding-top: 10px;
   margin-bottom: 0px;
@@ -194,28 +194,56 @@ main {
 }
 
 #aboutPhotos {
-  height: 500px;
-  background-image: url(images/contactus.jpg);
+  height: 700px;
+  background-image: url(images/about1.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 
   color: #ffffff;
 }
 
-#yurthero {
-  height: 300px;
-  background-image: url(images/yurt.jpg);
+#career1{
+  margin-right: 260px;
+  margin-top: 20px;
+  padding-right: 10px;
+  color: #666666;
+  border-right: 2px solid blue;
+  height: 700px;
+  background-image: url(images/about1.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  margin-left: 170px;
 }
 
-#trailhero {
-  height: 300px;
-  background-image: url(images/trail.jpg);
+#career{
+  margin-bottom: 20px;
+  /*height: 600px;
+  background-image: url(images/team2.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  margin-left: 170px;
+
+  color: #ffffff;
+
+}*/
+}
+aside{
+  float: right;
+  width: 250px;
+  border-top: 20px;
+  padding-top: 20px;
+  background-color: #e7e3e3;
+  height: 698px;
+
+}
+aside h3{
+  background-color:#e7e3e3;
+  color: #3399cc;
+}
+
+#contactUs{
+  height: 650px;
+  background-image: url(images/about1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 nav a {
@@ -257,6 +285,10 @@ p {
   color: rgb(12, 1, 1);
   width: 80%;
   padding-left: 1.6em;
+}
+
+#paragraph{
+  padding-top: 25px;
 }
 
 address {
@@ -341,6 +373,178 @@ button {
   border-radius: 5px 20px 5px;
 }
 
+table {
+  border: 1px solid #3399cc;
+  width: 90%;
+  margin: auto;
+  border-collapse: collapse;
+
+}
+
+td,
+th {
+  padding: 10px;
+  /*border: 1px solid #3399cc;*/
+}
+td {
+  text-align: left;
+}
+
+tr:nth-of-type(even) {
+  background-color: #aad8eb;
+}
+
+label {
+  float: left;
+  display: block;
+  width: 8em;
+  padding-right: 1em;
+}
+
+input {
+  display: block;
+  margin-bottom: 1em;
+  width: 25%;
+}
+
+textarea {
+  display: block;
+  margin-bottom: 1em;
+  width: 30%;
+}
+
+.mySubmit {
+  margin-left: 12em;
+  width: 20%;
+  height: 30px;
+  background-color: #3399cc;
+}
+button{
+  width: 30px;
+  height: 25px;
+}
+fieldset{
+  width: 520px;
+  border: 2px ridge #3399cc;
+  padding: 10px;
+  margin-bottom: 10px;
+  }
+  legend{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+  }
+ 
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: gray;
+  border: 1px solid #2196F3;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+  /* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  
+}
+
+#subRequest{
+  color: #2196F3;
+  font-weight: bold;
+  font-size: 1.3em;
+
+}
+#bottom { 
+  position: static;                  
+  bottom:0;                          
+  left:0;                          
+}
+/* Style the search field */
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 20px;
+  border: 1px solid grey;
+  float: left;
+  width: 35%;
+  background: #f1f1f1;
+  margin-left: 2em;
+}
+
+/* Style the submit button */
+form.example button {
+  float: left;
+  width: 20%;
+  height: 40px;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 20px;
+  border: 2px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+/*area{
+  border: 2px solid red;
+}*/
+
 header,
 nav,
 main,
@@ -399,13 +603,6 @@ footer {
     margin-left: 0;
   }
 
-  #yurthero {
-    margin-left: 0;
-  }
-
-  #trailhero {
-    margin-left: 0;
-  }
   dt {
     color: #3399cc;
     font-weight: bold;
@@ -417,7 +614,10 @@ footer {
     height: 100%;
     font-size: 1.5em;
     padding-left: 0.3em;
-    /*color: darkblue;*/
+    color: rgb(37, 52, 85);
+  }
+  h3{
+    height: 45px;
   }
 
   nav {
@@ -457,10 +657,6 @@ footer {
     display: none;
   }
 
-  #trailhero {
-    display: none;
-  }
-
   footer {
     padding: 0;
   }
@@ -478,4 +674,35 @@ footer {
   .column1 {
     width: 100%;
   }
+ #customer{
+    display: none;
+  }
+  fieldset{
+    width: 100%;
+  }
+  img {
+    height: 100%;
+    width: 100%;
+  }
+  #bottom { 
+    position:static;                  
+    bottom:0;                          
+    left:0;   
+    color: #3399cc;                       
+  }
+  aside{
+    display: none;
+  }
+  #career1{
+  padding-left: 2em;
+  padding-right: 2em;
+  height: 100%;
+  width: 100%;
+  }
+  /*#streamPhotos2{
+  height: 100%;
+  width: 100%;
+
+  }*/
+  
 }

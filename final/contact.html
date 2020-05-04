@@ -4,20 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Georgia Graphix is a Graphics design company with 
+    expertise in logo design, brochure design, package design, web design, 
+    t-shirt design, and apparel design">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Final Project</title>
+    <title>Final Project:: Contact</title>
     <link rel="stylesheet" href="final.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="16x16">
 </head>
 
 <body>
 
     <header>
-        <h1>Georgia Graphix and Web Design Company</h1>
+        <h1 id="top">Georgia Graphix and Web Design </h1>
     </header>
 
     <div id="wrapper">
-        
 
+        <!--Navigational bar-->
         <nav>
             <a href="index.html">Home</a>
             <a href="portfolio.html">Portfolio</a>
@@ -26,14 +30,17 @@
             <a href="about.html">About</a>
             <a href="contact.html">Contact Us</a>
             <a href="career.html">Career</a>
+            <a href="sitemap.html">Site Map</a>
 
         </nav>
-        <main>
-            
+        <main id="contactUs">
+
+            <h3>Contact Us</h3>
+            <!--dl, dt, dd to hold the address-->
             <div>
                 <dl>
                     <dt></dt>
-                    <dd><strong>Georgia Graphics and Web Design</strong></dd>
+                    <dd><strong>Georgia Graphix and Web Design</strong></dd>
                     <dd>1187 Atlanta High Way</dd>
                     <dd>Lawrenceville, Georgia, 30045</dd>
                     <br>
@@ -41,27 +48,50 @@
                     <span id="desktop">1-800-111-0011</span>
                 </dl>
             </div>
-            
+            <!--The form below is the contact form-->
+            <h4 id="subRequest">Submit Your Request</h4>
+            <p>Required information is marked with an asterisk (*).</p>
+            <form method="post" action="https://webdevbasics.net/scripts/pacific.php">
+                <label for="myFName">* First Name:</label>
+                <input type="text" name="myFName" id="myFName" required="required" placeholder="Your first name">
+
+                <label for="myLName">* Last Name:</label>
+                <input type="text" name="myLName" id="myLName" required="required" placeholder="Your last name">
+
+                <label for="myEmail">* E-mail:</label>
+                <input type="email" name="myEmail" id="myEmail" required="required" placeholder="you@yourdomain.com">
+
+                <label for="myPhone">* Phone:</label>
+                <input type="tel" name="myPhone" id="myPhone" required="required" placeholder="555-555-5555">
+
+                <label for="myComments">* Comments:</label>
+                <textarea name="myComments" id="myComments" rows="4" cols="40" required="required"
+                    placeholder="Your text here"></textarea>
+
+                <input class="mySubmit" type="submit" value="Submit">
+
+            </form>
+
         </main>
         <div class="policy">
             <a href="qanda.html">FAQs</a>
             <a href="privacyp.html">Privacy Plolicy</a>
             <a href="contact.html">Contact Us</a>
+            <a href="#top"> Skip to top</a>
 
-         </div>
-       
+        </div>
+
         <footer>
-                  
+
             Copyright &copy; 2020 Georgia Graphics Design
             <br>
-            <a href="customerservice@georgiagrapix.com">customerservice@georgiagrapix.com</a>
-       
-                          
+            <a href="mailto:customerservice@georgiagrapix.com">customerservice@georgiagrapix.com</a>
+
         </footer>
 
 
     </div>
-    
+
 
 </body>
 

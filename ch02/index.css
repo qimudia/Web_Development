@@ -1,0 +1,28 @@
+#wrapper{
+    width:80% ;
+    height: 100%;
+}
+
+nav{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+    
+
+}
+.heads{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
+.add{
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+
+
+  

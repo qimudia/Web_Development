@@ -4,20 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Georgia Graphix is a Graphics design company with 
+    expertise in logo design, brochure design, package design, web design, 
+    t-shirt design, and apparel design">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Final Project</title>
+    <title>Final Project:: Home</title>
     <link rel="stylesheet" href="final.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="16x16">
 </head>
 
 <body>
 
     <header>
-        <h1>Georgia Graphix and Web Design</h1>
+        <h1 id="top">Georgia Graphix and Web Design</h1>
     </header>
 
     <div id="wrapper">
 
-
+        <!--Navigational bar-->
         <nav>
             <a href="index.html">Home</a>
             <a href="portfolio.html">Portfolio</a>
@@ -26,40 +31,76 @@
             <a href="about.html">About</a>
             <a href="contact.html">Contact Us</a>
             <a href="career.html">Career</a>
+            <a href="sitemap.html">Site Map</a>
 
         </nav>
         <main>
-
+            <!--streamPhoto4 is for an image-->
             <div class="streamPhotos4">
-                <h3>Find the right Design Company.</h3>
+                <div>
+                    <div id="column2">
+                        <h3>Find the right Design Company.</h3>
+                    </div>
+                    <div>
+                        <form class="example" action="http://georgiagraphix.com/1510/index.html">
+                            <input type="text" placeholder="Search.." name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                            <audio controls="controls">
+                                <source src="TextTo.mp3" type="audio/mpeg">
+                                <a href="TextTo.mp3">Audio File</a> (MP3)
+                            </audio>
+                        </form>
+
+                    </div>
+                </div>
+
+                <!-- <h3>Find the right Design Company.</h3>-->
                 <!--<h3>If you need a website, logo, brochure, signs, packaging, or advertising, we are the right team for you.</h3>-->
 
-                <div id="toppic">
-                    <!--<h3>If you need a website, logo, brochure, signs, packaging, or advertising, we are the right team for you.</h3>-->
-                </div>
+
 
                 <div class="row1">
-                    <h2>Our Customers</h2>
+                    <div id="bottom">
+                        <!--Used the dl, dt, and dd to code the address of the comapny-->
+                        <dl>
+                            <dt></dt>
+                            <dd><strong>Georgia Graphix and Web Design</strong></dd>
+                            <dd>1187 Atlanta High Way</dd>
+                            <dd>Lawrenceville, Georgia, 30045</dd>
+                            <br>
+                            <a id="mobile" href="tel:1-800-111-0011">1-800-111-0011</a>
+                            <span id="desktop">1-800-111-0011</span>
+                        </dl>
+                    </div>
+                    <h2 id="customer">Our Customers</h2>
+                    <!--Column1 anchor tags are external hyperlinks. The images are supposed 
+                    to be our customers logo that leads to their website-->
                     <div class="column1">
-                        <li><img src="images/logo2.png" alt="Web" width="225" height="168"> </li>
+
+                        <li><a href="https://www.w3schools.com/"><img src="images/logo2.png" alt="Web" width="225"
+                                    height="175"></a> </li>
                     </div>
                     <div class="column1">
-                        <li><img src="images/logo7.png" alt="Web" width="225" height="168"> </li>
+                        <li><a href="https://www.google.com/"><img src="images/logo7.png" alt="Web" width="225"
+                                    height="175"></a> </li>
                     </div>
                     <div class="column1">
-                        <li><img src="images/logo5.png" alt="Web" width="225" height="168"> </li>
+                        <li><a href="https://www.w3schools.com/"><img src="images/logo5.png" alt="Web" width="225"
+                                    height="175"></a> </li>
                     </div>
                     <div class="column1">
-                        <li><img src="images/logo6.png" alt="Web" width="225" height="168"> </li>
+                        <li><a href="https://www.google.com/"><img src="images/logo6.png" alt="Web" width="225"
+                                    height="175"></a> </li>
                     </div>
                 </div>
-                
+
             </div>
         </main>
         <div class="policy">
             <a href="qanda.html">FAQs</a>
             <a href="privacyp.html">Privacy Plolicy</a>
             <a href="contact.html">Contact Us</a>
+            <a href="#top"> Skip to top</a>
 
         </div>
 
@@ -67,7 +108,7 @@
 
             Copyright &copy; 2020 Georgia Graphics Design
             <br>
-            <a href="customerservice@georgiagrapix.com">customerservice@georgiagrapix.com</a>
+            <a href="mailto:customerservice@georgiagrapix.com">customerservice@georgiagrapix.com</a>
 
 
         </footer>
